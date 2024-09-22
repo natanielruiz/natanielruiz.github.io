@@ -1,521 +1,772 @@
 <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
-<html>
-  <head>
-  <meta name=viewport content=“width=800”>
-  <meta name="generator" content="HTML Tidy for Linux/x86 (vers 11 February 2007), see www.w3.org">
-  <style type="text/css">
-    /* Color scheme stolen from Sergey Karayev */
-    a {
-    color: #1772d0;
-    text-decoration:none;
-    }
-    a:focus, a:hover {
-    color: #f09228;
-    text-decoration:none;
-    }
-    body,td,th,tr,p,a {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 14px
-    }
-    strong {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 14px;
-    }
-    heading {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 22px;
-    }
-    papertitle {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 14px;
-    font-weight: 700
-    }
-    name {
-    font-family: 'Lato', Verdana, Helvetica, sans-serif;
-    font-size: 32px;
-    }
-    .one
-    {
-    width: 160px;
-    height: 160px;
-    position: relative;
-    }
-    .two
-    {
-    width: 160px;
-    height: 160px;
-    position: absolute;
-    transition: opacity .2s ease-in-out;
-    -moz-transition: opacity .2s ease-in-out;
-    -webkit-transition: opacity .2s ease-in-out;
-    }
-    .fade {
-     transition: opacity .2s ease-in-out;
-     -moz-transition: opacity .2s ease-in-out;
-     -webkit-transition: opacity .2s ease-in-out;
-    }
-    span.highlight {
-        background-color: #ffffd0;
-    }
-  </style>
-  <link rel="icon" type="image/png" href="figs/bu_logo.png">
-  <title>Nataniel Ruiz</title>
-  <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
-  <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
-  </head>
-  <body>
-  <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
-    <tr>
-    <td>
-
-      <!-- ABOUT -->
-
-      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-      <tr>
-        <td width="75%" valign="middle">
-        <p align="center">
-          <name>Nataniel Ruiz</name>
-        </p>
-        <p style="text-align:justify"><br>
-          I am a Research Scientist at Google. Previously I completed my PhD at <a href="http://www.bu.edu/">Boston University</a>, advised by Professor and Dean of the College of Arts and Sciences <a href="http://www.cs.bu.edu/fac/sclaroff/">Stan Sclaroff</a>. My primary research focus is computer vision and machine learning.
- </p>
-
-        <p style="text-align:justify">
-          I interned at Amazon working with <a href="https://scholar.google.com/citations?user=Wx62iOsAAAAJ&hl=en">Javier Romero</a>, <a href="https://sites.google.com/site/bolkartt/">Timo Bolkart</a>, <a href="https://www.cs.umd.edu/~lin/">Ming C. Lin</a> and <a href="https://scholar.google.com/citations?user=hY3uN8oAAAAJ&hl=en">Raja Bala</a> during the Summer of 2021. I interned at <a href="https://machinelearning.apple.com/">Apple AI Research</a> during the 2019 and 2020 Summers where I worked with <a href="https://scholar.google.com/citations?user=DNrQd3IAAAAJ&hl=en">Dr. Barry-John Theobald</a> and <a href="https://scholar.google.com/citations?user=p4w7a_kAAAAJ&hl=en">Dr. Nicholas Apostoloff</a>. In 2018 I was a Spring/Summer intern at the <a href="http://www.nec-labs.com/research-departments/media-analytics/media-analytics-home">NEC-Labs Media Analytics Department</a>, where I worked with <a href="http://www.nec-labs.com/~manu/">Prof. Manmohan Chandraker</a> and <a href="http://www.nec-labs.com/samuel-schulter">Dr. Samuel Schulter</a>. I graduated from <a href="http://www.gatech.edu/">Georgia Tech</a> in Fall 2017 with a M.Sc. in Computer Science specializing in Machine Learning, advised by <a href="http://rehg.org/">Prof. James Rehg</a> at the <a href="http://behavioralimaging.net/index.php">Center for Behavioral Imaging</a>.<br><br>
-          
-          Recently, our work DreamBooth has been selected for a Student Best Paper Honorable Mention Award at CVPR 2023 (0.25% award rate) I have been selected as a <a href="https://blog.twitch.tv/en/2020/01/15/introducing-our-2020-twitch-research-fellows/">Twitch Research Fellowship</a> finalist for the year 2020 and as a second round interviewee for the <a href="https://www.openphilanthropy.org/focus/global-catastrophic-risks/potential-risks-advanced-artificial-intelligence/the-open-phil-ai-fellowship">Open Phil AI Fellowship</a>. I also appeared on the popular Machine Learning and AI podcast <a href="https://twimlai.com/twiml-talk-375-disrupting-deepfakes-adversarial-attacks-against-conditional-image-translation-networks-with-nataniel-ruiz/">TWIML AI</a> talking about my recent work on defending against deepfakes. While on a 5-year valedictorian scholarship, I obtained my B.Sc. and M.Sc. from <a href="https://www.polytechnique.edu/en">Ecole Polytechnique</a> in Paris, France. Aditionally, I worked as an intern at <a href="https://www.csail.mit.edu/">MIT CSAIL</a> with <a href="https://kalyan.lids.mit.edu/">Dr. Kalyan Veeramachaneni</a> and <a href="https://people.csail.mit.edu/lkagal/">Dr. Lalana Kagal</a>.
-        </p>
-
-        <p style="text-align:justify">
-          
-        </p>
-        <p align=center>
-          nruiz9 [at] bu.edu &nbsp|&nbsp
-          <a href="docs/nataniel_cv_long.pdf">CV</a> &nbsp|&nbsp
-          <a href="https://scholar.google.fr/citations?user=CiOmcSIAAAAJ&hl=en">Google Scholar</a> &nbsp|&nbsp
-          <a href="https://github.com/natanielruiz">GitHub</a> &nbsp|&nbsp
-          <a href="https://www.linkedin.com/in/nataniel-ruiz/"> LinkedIn </a>
-        </p>
-        </td>
-        <td width="25%">
-        <img src="figs/headshot_circle.png">
-        </td>
-      </tr>
-      </table>
-
-      <!-- RESEARCH -->
-
-      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-      <tr>
-        <td width="100%" valign="middle">
-          <heading>Research</heading>
-          <p>
-            Currently, my main interests include generative models, diffusion models, personalization of generative models, simulation and beneficial adversarial attacks. 
-          </p>
-        </td>
-      </tr>
-      </table>
-
-        
-      <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nataniel Ruiz</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body, td, th, tr, p, a {
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+        }
+        strong {
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+        }
+        heading {
+            font-family: 'Poppins', sans-serif;
+            font-size: 22px;
+            font-weight: 600;
+        }
+        papertitle {
+            font-family: 'Poppins', sans-serif;
+            font-size: 14px;
+            font-weight: 600;
+        }
+        name {
+            font-family: 'Poppins', sans-serif;
+            font-size: 32px;
+        }
+        .one {
+            width: 160px;
+            height: 160px;
+            position: relative;
+        }
+        .two {
+            width: 160px;
+            height: 160px;
+            position: absolute;
+            transition: opacity .2s ease-in-out;
+            -moz-transition: opacity .2s ease-in-out;
+            -webkit-transition: opacity .2s ease-in-out;
+        }
+        .fade {
+            transition: opacity .2s ease-in-out;
+            -moz-transition: opacity .2s ease-in-out;
+            -webkit-transition: opacity .2s ease-in-out;
+        }
+        span.highlight {
+            background-color: #ffffd0;
+        }
+    </style>
+</head>
+<body>
+    <table width="800" border="0" align="center" cellspacing="0" cellpadding="0">
         <tr>
-            <td style="padding:10px;width:100%;vertical-align:middle">
-                <heading>Recent News</heading>
-            </td>
-        </tr>
-    </tbody></table>
-    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-        
-    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr>
-        <ul>
+            <td>
+                <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                    <tr>
+                        <td width="75%" valign="middle">
+                            <p align="center">
+                                <name>Nataniel Ruiz</name>
+                            </p>
+                            <p style="text-align:justify">
+                                I am a Research Scientist at Google. I completed my PhD at <a href="http://www.bu.edu/">Boston University</a>, advised by Professor and Dean of the College of Arts and Sciences <a href="http://www.cs.bu.edu/fac/sclaroff/">Stan Sclaroff</a>. I did my Masters at <a href="https://www.gatech.edu/">Georgia Tech</a> with <a href="https://rehg.org/">James Rehg</a> and my Bachelors at <a href="https://www.polytechnique.edu/en">Ecole Polytechnique</a> in Paris. Prior to joining Google I interned at Apple, Amazon and NEC Labs. My primary research focus is computer vision and machine learning.
+                            </p>
+                            <p align="center">
+                                nruiz9 [at] bu.edu |
+                                <a href="docs/nataniel_cv_long.pdf">CV</a> |
+                                <a href="https://scholar.google.fr/citations?user=CiOmcSIAAAAJ&hl=en">Google Scholar</a> |
+                                <a href="https://github.com/natanielruiz">GitHub</a> |
+                                <a href="https://www.linkedin.com/in/nataniel-ruiz/"> LinkedIn </a>
+                            </p>
+                        </td>
+                        <td width="25%">
+                            <img src="figs/headshot_circle.png" alt="Nataniel Ruiz">
+                        </td>
+                    </tr>
+                </table>
 
-          <li><strong>[<font color="red">Jun 2023</font>]</strong> DreamBooth won a Student Best Paper Honorable Mention Award at CVPR 2023 (0.25% award rate)</li>
-          
-          <li><strong>[<font color="red">Apr 2023</font>]</strong> I joined Google as a Research Scientist!</li>
-          
-          <li><strong>[Oct 2022]</strong> I'm co-organizing the <a href="https://eccv22-arow.github.io">Adversarial Robustness Workshop</a> at ECCV 2022.</li>
+                <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                    <tr>
+                        <td width="100%" valign="middle">
+                            <heading>Research</heading>
+                            <p>
+                                Currently, my main interests include generative models, diffusion models, personalization of generative models, simulation and beneficial adversarial attacks. 
+                            </p>
+                        </td>
+                    </tr>
+                </table>
 
-          <li><strong>[Sep 2022]</strong> Our work <a href="https://ieeexplore.ieee.org/abstract/document/9906410/">ATL-BP: A Student Engagement Dataset and Model for Affect Transfer Learning for Behavior Prediction</a> has been accepted to the IEEE Transactions on Biometrics, Identity and Behavior (T-BIOM) journal!</li>
+                <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                    <tr>
+                        <td>
+                            <heading>Publications</heading>
+                        </td>
+                    </tr>
+                </table>
 
-          <li><strong>[Sep 2022]</strong> Our work <a href="https://counterfactualsimulation.github.io">Finding Differences Between Transformers and ConvNets Using Counterfactual Simulation Testing</a> has been accepted to NeurIPS 2023!</li>
+                <!-- Magic Insert: Style-Aware Drag-and-Drop -->
+                <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                    <tr>
+                        <td width="25%">
+                            <img src='figs/magicinsert.png' width="160" height="160">
+                        </td>
+                        <td width="75%" valign="top">
+                            <p>
+                                <a href="https://arxiv.org/abs/2407.02489">
+                                    <papertitle>Magic Insert: Style-Aware Drag-and-Drop</papertitle>
+                                </a>
+                                <br>
+                                <strong>N. Ruiz</strong>, Y. Li, N. Wadhwa, Y. Pritch, M. Rubinstein, D. E. Jacobs, S. Fruchter
+                                <br>
+                                <em>arXiv preprint arXiv:2407.02489</em>, 2024
+                                <br>
+                                <a href="https://magicinsert.github.io/">website</a> |
+                                <a href="https://magicinsert.github.io/demo.html">demo</a> |
+                                <a href="https://magicinsert.github.io/subjectplop.zip">dataset</a> |
+                                <a href="https://x.com/natanielruizg/status/1808524800630960497">tweet</a>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
 
-          <li><strong>[Aug 2022]</strong> We released our Google project <a href="https://dreambooth.github.io">DreamBooth: Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation</a> </li>
 
-          <li><strong>[Aug 2022]</strong> Our Amazon paper <a href="https://arxiv.org/abs/2210.05667">Human Body Measurement Estimation with Adversarial Augmentation</a> has been accepted and presented at 3DV 2022!</li>
+                <!-- RB-Modulation: Training-Free Personalization of Diffusion Models using Stochastic Optimal Control -->
+                <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                    <tr>
+                        <td width="25%">
+                            <img src='figs/rb-modulation.png' width="160" height="160">
+                        </td>
+                        <td width="75%" valign="top">
+                            <p>
+                                <a href="https://arxiv.org/abs/2405.17401">
+                                    <papertitle>RB-Modulation: Training-Free Personalization of Diffusion Models using Stochastic Optimal Control</papertitle>
+                                </a>
+                                <br>
+                                L. Rout, Y. Chen, <strong>N. Ruiz</strong>, A. Kumar, C. Caramanis, S. Shakkottai, W.-S. Chu
+                                <br>
+                                <em>arXiv preprint arXiv:2405.17401</em>, 2024
+                                <br>
+                                <a href="https://rb-modulation.github.io/">website</a> |
+                                <a href="https://huggingface.co/spaces/fffiloni/RB-Modulation">demo</a> |
+                                <a href="https://github.com/google/RB-Modulation">code</a> |
+                                <a href="https://x.com/natanielruizg/status/1796217919807934475">tweet</a>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
 
-          <li><strong>[Feb 2022]</strong> Our paper <a href="https://arxiv.org/abs/2106.04569">Simulated Adversarial Testing of Face Recognition Models</a> has been accepted to CVPR 2022!</li>
+                <!-- ZipLoRA: Any Subject in Any Style by Effectively Merging LoRAs -->
+                <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                    <tr>
+                        <td width="25%">
+                            <img src='figs/ziplora.png' width="160" height="160">
+                        </td>
+                        <td width="75%" valign="top">
+                            <p>
+                                <a href="https://arxiv.org/abs/2311.13600">
+                                    <papertitle>ZipLoRA: Any Subject in Any Style by Effectively Merging LoRAs</papertitle>
+                                </a>
+                                <br>
+                                V. Shah, <strong>N. Ruiz</strong>, F. Cole, E. Lu, S. Lazebnik, Y. Li, V. Jampani
+                                <br>
+                                <em>European Conference on Computer Vision (ECCV)</em>, 2024
+                                <br>
+                                <a href="https://ziplora.github.io/">website</a> |
+                                <a href="https://x.com/natanielruizg/status/1727718489425616912">tweet</a> |
+                                <a href="https://github.com/mkshing/ziplora-pytorch">unofficial code</a>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
 
-          <li><strong>[Jan 2022]</strong> I will be interning at Google Research during the Summer of 2022!</li>
+                <!-- RealFill: Reference-driven Generation for Authentic Image Completion -->
+                <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                    <tr>
+                        <td width="25%">
+                            <img src='figs/realfill.png' width="160" height="160">
+                        </td>
+                        <td width="75%" valign="top">
+                            <p>
+                                <a href="https://arxiv.org/abs/2309.16668">
+                                    <papertitle>RealFill: Reference-driven Generation for Authentic Image Completion</papertitle>
+                                </a>
+                                <br>
+                                L. Tang, <strong>N. Ruiz</strong>, Q. Chu, Y. Li, A. Holynski, D. E. Jacobs, B. Hariharan, Y. Pritch, N. Wadhwa, K. Aberman, M. Rubinstein
+                                <br>
+                                <em>SIGGRAPH (Journal Track)</em>, 2024
+                                <br>
+                                <a href="https://realfill.github.io/">website</a> |
+                                <a href="https://www.youtube.com/watch?v=bD_HyxHMHPo">two minute papers</a> |
+                                <a href="https://drive.google.com/file/d/18hlxyw3g3C9QwG9PtFCPedMgcVxFAN0e/view">data</a> |
+                                <a href="https://x.com/natanielruizg/status/1707767757503103031">tweet</a> |
+                                <a href="https://github.com/thuanz123/realfill">code</a>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
 
-          <li><strong>[Dec 2021]</strong> Our work <a href="https://arxiv.org/abs/2002.05242">Leveraging Affect Transfer Learning for Behavior Prediction in an Intelligent Tutoring System</a> has been selected for a <b>Best Poster award</b> at FG 2021!</li>
+                <!-- HyperDreamBooth: Hypernetworks for Fast Personalization of Text-to-Image Models -->
+                <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                    <tr>
+                        <td width="25%">
+                            <img src='figs/hyperdreambooth.png' width="160" height="160">
+                        </td>
+                        <td width="75%" valign="top">
+                            <p>
+                                <a href="https://arxiv.org/abs/2307.06949">
+                                    <papertitle>HyperDreamBooth: Hypernetworks for Fast Personalization of Text-to-Image Models</papertitle>
+                                </a>
+                                <br>
+                                <strong>N. Ruiz</strong>, Y. Li, V. Jampani, W. Wei, T. Hou, Y. Pritch, N. Wadhwa, M. Rubinstein, K. Aberman
+                                <br>
+                                <em>Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2024
+                                <br>
+                                <a href="https://hyperdreambooth.github.io/">website</a> |
+                                <a href="https://x.com/natanielruizg/status/1679893292618752000">tweet</a>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
 
-          <li><strong>[Oct 2021]</strong> Our Apple work <a href="https://arxiv.org/abs/2012.05225">MorphGAN: One-Shot Face Synthesis GAN for Detecting Recognition Bias</papertitle></a> has been accepted to BMVC 2021.</li>
+                <!-- Platypus -->
+                <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                    <tr>
+                        <td width="25%">
+                            <img src='figs/platypus.png' width="160" height="160">
+                        </td>
+                        <td width="75%" valign="top">
+                            <p>
+                                <a href="https://arxiv.org/abs/2308.07317">
+                                    <papertitle>Platypus: Quick, Cheap, and Powerful Refinement of LLMs</papertitle>
+                                </a>
+                                <br>
+                                A. N. Lee, C. J. Hunter, <strong>N. Ruiz</strong>
+                                <br>
+                                <em>Neural Information Processing Systems Workshop (NeurIPS Workshop​)​</em>, 2023
+                                <br>
+                                <a href="https://platypus-llm.github.io/">website</a> |
+                                <a href="https://x.com/natanielruizg/status/1690048207030493189">tweet</a>
+                                <a href="https://huggingface.co/garage-bAInd">models</a> |
+                                <a href="https://huggingface.co/datasets/garage-bAInd/Open-Platypus">dataset</a> |
+                                <a href="https://github.com/arielnlee/Platypus">code</a>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
 
-          <li><strong>[Oct 2021]</strong> I co-organized the 2nd Workshop on <a href="https://iccv21-adv-workshop.github.io/">Adversarial Robustness in the Real World</a> at ICCV 2021 and moderated panel discussions.</li>
+                <!-- SuTI: Subject-driven Text-to-Image Generation via Apprenticeship Learning -->
+                <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                    <tr>
+                        <td width="25%">
+                            <img src='figs/suti.png' width="160" height="160">
+                        </td>
+                        <td width="75%" valign="top">
+                            <p>
+                                <a href="https://arxiv.org/abs/2304.00186">
+                                    <papertitle>Subject-driven Text-to-Image Generation via Apprenticeship Learning</papertitle>
+                                </a>
+                                <br>
+                                W. Chen, H. Hu, Y. Li, <strong>N. Ruiz</strong>, X. Jia, M.-W. Chang, W. W. Cohen
+                                <br>
+                                <em>Neural Information Processing Systems (NeurIPS)</em>, 2023
+                                <br>
+                                <a href="https://open-vision-language.github.io/suti/">website</a> |
+                                <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/image/fine-tune-model">google cloud launch</a>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
 
-        </ul>
-      </td>
-    </tr>
-    </tbody></table>
-    <hr>
+                <!-- StyleDrop -->
+                <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                    <tr>
+                        <td width="25%">
+                            <img src='figs/styledrop.png' width="160" height="160">
+                        </td>
+                        <td width="75%" valign="top">
+                            <p>
+                                <a href="https://arxiv.org/abs/2306.00983">
+                                    <papertitle>StyleDrop: Text-to-Image Generation in Any Style</papertitle>
+                                </a>
+                                <br>
+                                K. Sohn, <strong>N. Ruiz</strong>, K. Lee, D. Castro Chin, I. Blok, H. Chang, J. Barber, L. Jiang, G. Entis, Y. Li, Y. Hao, I. Essa, M. Rubinstein, D. Krishnan
+                                <br>
+                                <em>Conference on Neural Information Processing Systems (NeurIPS)</em>, 2023
+                                <br>
+                                <a href="https://styledrop.github.io">website</a> |
+                                <a href="https://x.com/natanielruizg/status/1664653573597065225">tweet</a> |
+                                <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/image/fine-tune-style">google cloud launch</a> |
+                                <a href="https://github.com/zideliu/StyleDrop-PyTorch">unofficial code</a>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
 
-  <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                <!-- DreamBooth3D -->
+                <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                    <tr>
+                        <td width="25%">
+                            <img src='figs/dreambooth3d.png' width="160" height="160">
+                        </td>
+                        <td width="75%" valign="top">
+                            <p>
+                                <a href="https://arxiv.org/abs/2303.13508">
+                                    <papertitle>DreamBooth3D: Subject-driven Text-to-3D Generation</papertitle>
+                                </a>
+                                <br>
+                                A. Raj, S. Kaza, B. Poole, M. Niemeyer, <strong>N. Ruiz</strong>, B. Mildenhall, S. Zada, K. Aberman, M. Rubinstein, J. Barron, Y. Li, V. Jampani
+                                <br>
+                                <em>International Conference on Computer Vision (ICCV)</em>, 2023
+                                <br>
+                                <a href="https://dreambooth3d.github.io/">website</a> |
+                                <a href="https://www.youtube.com/watch?v=kKVDrbfvOoA">demo video</a> |
+                                <a href="https://x.com/_akhaliq/status/1639066078323298304">tweet</a>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
 
-    <tr>
-      <td width="25%">
-        <div class="one">
-        <img src='figs/dreambooth.png' height='115%' width="100%">
-        </div>
-      </td>
-      <td valign="top" width="75%">
-        <p><a href="https://arxiv.org/abs/2208.12242">
-          <papertitle>DreamBooth: Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation</papertitle></a><br>
-          <strong>N. Ruiz</strong>, <a href="http://people.csail.mit.edu/yzli/">Y. Li</a>, <a href="https://varunjampani.github.io/">V. Jampani</a>, <a href="https://research.google/people/106214/">Y. Pritch</a>, <a href="http://people.csail.mit.edu/mrub/">M. Rubinstein</a>, <a href="https://kfiraberman.github.io/">K. Aberman</a><br>
-          <em>Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2023 <br>
-          <font color="red"><strong>(Best Student Paper Honorable Mention Award - 0.25% award rate)</strong></font><br>
-          <a href="https://dreambooth.github.io">website</a> &nbsp|&nbsp
-          <a href="https://en.wikipedia.org/wiki/DreamBooth">Wikipedia</a> &nbsp|&nbsp
-          <a href="https://www.youtube.com/watch?v=W4Mcuh38wyM">Corridor Crew demo video</a> &nbsp|&nbsp
-          <a href="https://twitter.com/natanielruizg/status/1563166568195821569?s=20&t=vAnQmQb7iYVoKTzgblFxYg">announcement tweet</a> &nbsp|&nbsp
-          <a href="https://github.com/huggingface/diffusers/tree/main/examples/dreambooth">diffusers code</a> &nbsp|&nbsp
-          <a href="https://github.com/XavierXiao/Dreambooth-Stable-Diffusion">large unofficial implementation</a> &nbsp|&nbsp
-          <a href="https://huggingface.co/sd-dreambooth-library">concept library</a>
-          <br>
-          <p style="text-align:justify">
-            We present a new approach for personalization of text-to-image diffusion models. Given few-shot inputs of a subject, we fine-tune a pretrained text-to-image model to bind a unique identifier with that specific subject such that we cansynthesize fully-novel photorealistic images of the subject contextualized in different scenes. By leveraging the semantic prior embedded in the model with a new autogenous class-specific prior preservation loss, our technique enables synthesizing the subject in diverse scenes, poses, views, and lighting conditions that do not appear in the reference images. We apply our technique to several previously-unassailable tasks, including subject recontextualization, text-guided view synthesis, appearance modification, and artistic rendering (all while preserving the subject's key features).
-          </p>
-        </td>
-      </tr>
+                <!-- DreamBooth -->
+                <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                    <tr>
+                        <td width="25%">
+                            <img src='figs/dreambooth.png' width="160" height="184">
+                        </td>
+                        <td width="75%" valign="top">
+                            <p>
+                                <a href="https://arxiv.org/abs/2208.12242">
+                                    <papertitle>DreamBooth: Fine Tuning Text-to-Image Diffusion Models for Subject-Driven Generation</papertitle>
+                                </a>
+                                <br>
+                                <strong>N. Ruiz</strong>, Y. Li, V. Jampani, Y. Pritch, M. Rubinstein, K. Aberman
+                                <br>
+                                <em>Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2023
+                                <br>
+                                <font color="red"><strong>(Best Student Paper Honorable Mention Award - 0.25% award rate)</strong></font>
+                                <br>
+                                <a href="https://dreambooth.github.io">website</a> |
+                                <a href="https://en.wikipedia.org/wiki/DreamBooth">wikipedia</a> |
+                                <a href="https://www.youtube.com/watch?v=W4Mcuh38wyM">corridor crew video</a> |
+                                <a href="https://twitter.com/natanielruizg/status/1563166568195821569?s=20&t=vAnQmQb7iYVoKTzgblFxYg">tweet</a> |
+                                <a href="https://github.com/huggingface/diffusers/tree/main/examples/dreambooth">diffusers code</a> |
+                                <a href="https://github.com/XavierXiao/Dreambooth-Stable-Diffusion">alt unofficial code</a> | 
+                                <a href="https://cloud.google.com/vertex-ai/generative-ai/docs/image/fine-tune-model">google cloud launch</a>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
 
-      <tr>
-        <td width="25%">
-          <div class="one">
-          <img src='figs/counterfactual_teaser.png' height='100%' width="100%">
-          </div>
-        </td>
-        <td valign="top" width="75%">
-          <p><a href="https://counterfactualsimulation.github.io">
-            <papertitle>Finding Differences Between Transformers and ConvNets Using Counterfactual Simulation Testing</papertitle></a><br>
-            <strong>N. Ruiz</strong>, <a href="https://cs-people.bu.edu/sbargal/">S. Bargal</a>, <a href="https://cihangxie.github.io">Cihang Xie</a>, <a href="https://www.bu.edu/cs/profiles/saenko/">Kate Saenko</a>, <a href="https://www.cs.bu.edu/fac/sclaroff/">S. Sclaroff</a><br>
-            <em>Conference on Neural Information Processing Systems (NeurIPS)</em>, 2022 <br>
-            <p style="text-align:justify">
-              We present Counterfactual Simulation Testing, a counterfactual framework that allows us to study the robustness of neural networks with respect to some of these naturalistic variations by building realistic synthetic scenes that allow us to ask counterfactual questions to the models, ultimately providing answers to questions such as "Would your classification still be correct if the object were viewed from the top?". Our method allows for a fair comparison of the robustness of recently released, state-of-the-art CNNs and Transformers, with respect to these naturalistic variations. Among other interesting differences between these classes of architectures, we find evidence for differences in performance with respect to object viewpoint, object scale and occlusions. We also release our large simulated dataset with more than 272,000 images of 92 objects under 27 lighting environments.
-            </p>
-          </td>
-        </tr>
+                <!-- Simulating to Learn: Using Adaptive Simulation to Train, Test and Understand Neural Networks (Thesis) -->
+                <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                    <tr>
+                        <td width="25%">
+                            <img src='figs/thesis.png' width="160" height="160">
+                        </td>
+                        <td width="75%" valign="top">
+                            <p>
+                                <a href="https://www.proquest.com/openview/95d9950a23ab02ce22436eb1862c4fbf/1?pq-origsite=gscholar&cbl=18750&diss=y">
+                                    <papertitle>Simulating to Learn: Using Adaptive Simulation to Train, Test and Understand Neural Networks (Thesis)</papertitle>
+                                </a>
+                                <br>
+                                <strong>N. Ruiz</strong>
+                                <br>
+                                <em>Boston University, 2023 (PhD Thesis)</em>
+                                <br>
+                                This thesis presents new insights into the use of adaptive simulation to train and test machine learning models, addressing the key obstacle of collecting annotated and high-quality real-world data. The thesis presents five novel methods for adapting simulated data distributions to improve the training and testing of neural networks.
+                            </p>
+                        </td>
+                    </tr>
+                </table>
 
-    <tr>
-      <td width="25%">
-        <div class="one">
-        <img src='figs/model_amazon.png' height='100%' width="100%">
-        </div>
-      </td>
-      <td valign="top" width="75%">
-        <p><a href="https://arxiv.org/abs/2210.05667">
-          <papertitle>Human Body Measurement Estimation with Adversarial Augmentation</papertitle></a><br>
-          <strong>N. Ruiz</strong>, <a href="https://scholar.google.es/citations?user=tcTadjYAAAAJ&hl=en">M. Bellver</a>, <a href="https://ps.is.mpg.de/~tbolkart">T. Bolkart</a>, <a href="https://www.ambujarora.com">A. Arora</a>, <a href="https://www.cs.umd.edu/~lin/">M.C. Lin</a>, <a href="https://scholar.google.com/citations?user=Wx62iOsAAAAJ&hl=en">J. Romero</a>, <a href="https://scholar.google.com/citations?user=hY3uN8oAAAAJ&hl=en">R. Bala</a><br>
-          <em>International Conference on 3D Vision (3DV)</em>, 2022 <br>
-          <a href="https://adversarialbodysim.github.io">website</a> &nbsp|&nbsp
-          <a href="https://adversarialbodysim.github.io/files/148.pdf">poster</a> &nbsp|&nbsp
-          <a href="https://drive.google.com/file/d/1uyrSuhsHYiiTqr68yQb3Rf3OawFl_a3F/view?usp=sharing">video</a> &nbsp|&nbsp
-          <a href="https://github.com/awslabs/open-data-registry/blob/main/datasets/bodym.yaml">dataset</a><br>
-          <p style="text-align:justify">
-              We propose a method to generate adaptive data to test and train a human body measurement estimation model in an adversarial manner by searching the latent space of a body simulator for challenging bodies. We present a state-of-the-art human body measurement estimation network that accurately predicts measurements of human bodies given only frontal and profile silhouette images, with applications to fashion and health. Finally, we release BodyM, the first challenging, large-scale dataset of photo silhouettes and body measurements of real human subjects, to further promote research in this area.
-          </p>
-        </td>
-      </tr>
+                <!-- Practical Disruption of Image Translation Deepfake Networks -->
+                <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                    <tr>
+                        <td width="25%">
+                            <img src='figs/practicaldisruption.png' width="160" height="160">
+                        </td>
+                        <td width="75%" valign="top">
+                            <p>
+                                <a href="https://arxiv.org/abs/PLACEHOLDER">
+                                    <papertitle>Practical Disruption of Image Translation Deepfake Networks</papertitle>
+                                </a>
+                                <br>
+                                <strong>N. Ruiz</strong>, S. A. Bargal, C. Xie, S. Sclaroff
+                                <br>
+                                <em>AAAI Conference on Artificial Intelligence</em>, 2023
+                                <br>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
 
-    <tr>
-        <td width="25%">
-          <div class="one">
-          <img src='figs/adv_test_sim.png' height='110%' width="100%">
-          </div>
-        </td>
-        <td valign="top" width="75%">
-          <p><a href="https://arxiv.org/abs/2106.04569">
-            <papertitle>Simulated Adversarial Testing of Face Recognition Models</papertitle></a><br>
-            <strong>N. Ruiz</strong>, <a href="https://adamkortylewski.com">A. Kortylewski</a>, <a href="https://weichaoqiu.com">W. Qiu</a>, <a href="https://cihangxie.github.io">Cihang Xie</a>, <a href="https://cs-people.bu.edu/sbargal/">Sarah Adel Bargal</a>, <a href="https://www.cs.jhu.edu/~ayuille/">Alan Yuille</a>, <a href="https://www.cs.bu.edu/fac/sclaroff/">S. Sclaroff</a><br>
-            <em>Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2022 <br>
-            <p style="text-align:justify">
-                We propose a framework for learning how to test machine learning models using simulators in an adversarial manner in order to find weaknesses in the models before deploying them in critical scenarios. We apply this method in a face recognition scenario. Using our proposed method, we can find adversarial faces that fool contemporary face recognition models. This demonstrates the fact that these models have weaknesses that are not measured by commonly used validation datasets. We hypothesize that this type of adversarial examples are not isolated, but usually lie in connected regions in the latent space of the simulator. We present a method to find these adversarial regions.
-            </p>
-          </td>
-        </tr>
 
-    <tr>
-        <td width="25%">
-          <div class="one">
-          <img src='figs/bbox_face_attacks.png' height='60%' width="100%">
-          </div>
-        </td>
-        <td valign="top" width="75%">
-          <p><a href="https://arxiv.org/abs/2107.09126">
-            <papertitle>Examining the Human Perceptibility of Black-Box Adversarial Attacks on Face Recognition</papertitle></a><br>
-            Benjamin Spetter-Goldstein, <strong>N. Ruiz</strong>, <a href="https://cs-people.bu.edu/sbargal/">Sarah Adel Bargal</a><br>
-            <em>ICML Adversarial Machine Learning Workshop</em>, 2021 <br>
-            <p style="text-align:justify">
-                Through examining and measuring both the effectiveness of recent popular black-box attacks in the face recognition setting and their corresponding human perceptibility through survey data, we demonstrate the trade-offs in perceptibility that occur as attacks become more aggressive. We also show how the norm and other metrics do not correlate with human perceptibility in a linear fashion, thus making these norms suboptimal at measuring adversarial attack perceptibility. We argue that some attacks seem very effective when evaluated using Lp norms, but are too perceptible and thus harder to use in the real world.
-            </p>
-          </td>
-        </tr>
+                <!-- Hardwiring ViT Patch Selectivity into CNNs using Patch Mixing -->
+                <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                    <tr>
+                        <td width="25%">
+                            <img src='figs/patchmixing.png' width="160" height="160">
+                        </td>
+                        <td width="75%" valign="top">
+                            <p>
+                                <a href="https://arxiv.org/abs/2306.17848">
+                                    <papertitle>Hardwiring ViT Patch Selectivity into CNNs using Patch Mixing</papertitle>
+                                </a>
+                                <br>
+                                A. N. Lee, S. A. Bargal, J. Kasera, S. Sclaroff, K. Saenko, <strong>N. Ruiz</strong>
+                                <br>
+                                <em>arXiv preprint arXiv:2306.17848</em>, 2023
+                                <br>
+                                <a href="https://arielnlee.github.io/PatchMixing/">website</a> |
+                                <a href="https://huggingface.co/datasets/ariellee/Superimposed-Masked-Dataset">Superimposed Masked Dataset</a> |
+                                <a href="https://huggingface.co/datasets/ariellee/Realistic-Occlusion-Dataset">Realistic Occlusion Dataset</a> |
+                                <a href="https://x.com/natanielruizg/status/1675899509396631555">announcement tweet</a>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
 
-    <tr>
-      <td width="25%">
-        <div class="one">
-        <img src='figs/morphgan.gif' height='100%' width="100%">
-        </div>
-      </td>
-      <td valign="top" width="75%">
-        <p><a href="https://arxiv.org/abs/2012.05225">
-          <papertitle>MorphGAN: One-Shot Face Synthesis GAN for Detecting Recognition Bias</papertitle></a><br>
-          <strong>N. Ruiz</strong>, <a href="https://scholar.google.com/citations?user=DNrQd3IAAAAJ&hl=en">B. J. Theobald</a>, <a href="https://anuragranj.github.io">A. Ranjan</a>, <a href="https://scholar.google.com/citations?user=h08ICysAAAAJ&hl=en">A. H. Abdelaziz</a>, <a href="https://scholar.google.com/citations?user=p4w7a_kAAAAJ&hl=en">N. Apostoloff</a><br>
-          <em>British Machine Vision Conference (BMVC)</em>, 2021 <br>
-          <p style="text-align:justify">
-            We present MorphGAN, a powerful GAN that can control the head pose and facial expression of a face image. MorphGAN can generalize to unseen identities (one-shot) and generates realistic outputs that conserve the input identity. We use this simulator to generate new images to test the robustness of a facial recognition deep network with respect to pose and expression, without the need to collect new test data. Aditionally, we show that the generated images can be used to augment small datasets of faces with new poses and expressions to improve recognition accuracy.
-          </p>
-        </td>
-      </tr>
+                <!-- Counterfactual Simulation Testing -->
+                <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                    <tr>
+                        <td width="25%">
+                            <img src='figs/counterfactual_teaser.png' width="160" height="160">
+                        </td>
+                        <td width="75%" valign="top">
+                            <p>
+                                <a href="https://arxiv.org/abs/2211.16499">
+                                    <papertitle>Finding Differences Between Transformers and ConvNets Using Counterfactual Simulation Testing</papertitle>
+                                </a>
+                                <br>
+                                <strong>N. Ruiz</strong>, S. Bargal, Cihang Xie, Kate Saenko, S. Sclaroff
+                                <br>
+                                <em>Conference on Neural Information Processing Systems (NeurIPS)</em>, 2022
+                                <br>
+                                <a href="https://counterfactualsimulation.github.io">website</a> |
+                                <a href="https://drive.google.com/drive/folders/1uS0XlVtoVy-B0yuVI7bFvBQb3RiCeeE3?usp=share_link">Dataset</a>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
 
-    <tr>
-      <td width="25%">
-        <div class="one">
-        <img src='figs/blackbox_deepfake.png' height='92.4%' width="100%">
-        </div>
-      </td>
-      <td valign="top" width="75%">
-        <p><a href="https://arxiv.org/abs/2006.06493">
-          <papertitle>Protecting Against Image Translation Deepfakes by Leaking Universal Perturbations from Black-Box Neural Networks</papertitle></a><br>
-          <strong>N. Ruiz</strong>, <a href="https://cs-people.bu.edu/sbargal/">S. Bargal</a>, <a href="https://www.cs.bu.edu/fac/sclaroff/">S. Sclaroff</a><br>
-          <em>arxiv</em>, 2021 <br>
-          <p style="text-align:justify">
-            We are the first to attack image translation systems in a black-box scenario. Our novel algorithm "learning universal perturbations" (LUP) significantly reduces the number of queries needed for black-box attacks by leaking and exploiting information from the deep network. Our attacks can be used to protect images from manipulation and to prevent deepfake generation in the real world.
-          </p>
-        </td>
-      </tr>
+                <!-- Human Body Measurement Estimation -->
+                <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                    <tr>
+                        <td width="25%">
+                            <img src='figs/model_amazon.png' width="160" height="160">
+                        </td>
+                        <td width="75%" valign="top">
+                            <p>
+                                <a href="https://arxiv.org/abs/2210.05667">
+                                    <papertitle>Human Body Measurement Estimation with Adversarial Augmentation</papertitle>
+                                </a>
+                                <br>
+                                <strong>N. Ruiz</strong>, M. Bellver, T. Bolkart, A. Arora, M.C. Lin, J. Romero, R. Bala
+                                <br>
+                                <em>International Conference on 3D Vision (3DV)</em>, 2022
+                                <br>
+                                <a href="https://adversarialbodysim.github.io">website</a> |
+                                <a href="https://adversarialbodysim.github.io/files/148.pdf">poster</a> |
+                                <a href="https://drive.google.com/file/d/1uyrSuhsHYiiTqr68yQb3Rf3OawFl_a3F/view?usp=sharing">video</a> |
+                                <a href="https://github.com/awslabs/open-data-registry/blob/main/datasets/bodym.yaml">dataset</a>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
 
-    <tr>
-        <td width="25%">
-          <div class="one">
-          <img src='figs/img_leveraging.png' height='89%' width="100%">
-          </div>
-        </td>
-        <td valign="top" width="75%">
-          <p><a href="https://arxiv.org/abs/2002.05242">
-            <papertitle>Leveraging Affect Transfer Learning for Behavior Prediction in an Intelligent Tutoring System</papertitle></a><br>
-            <strong>N. Ruiz</strong>, <a href="https://cs-people.bu.edu/haoyu/">H. Yu</a>, <a href="http://people.umass.edu/~allessio/index.html">D. Allessio</a>, <a href="http://monajalal.com/">M. Jalal</a>, <a href="https://www.cics.umass.edu/people/murray-thomas">Thomas Murray</a>, <a href="https://www2.clarku.edu/faculty/facultybio.cfm?id=891">J. Magee</a>, <a href="https://www.wpi.edu/people/faculty/jrwhitehill">J. Whitehill</a>, <a href="https://scholar.google.com/citations?user=dFNbaFsAAAAJ&hl=en">V. Ablavsky</a>, <a href="https://www.cics.umass.edu/people/arroyo-ivon">I. Arroyo</a>, <a href="https://www.cics.umass.edu/faculty/directory/woolf_beverly">B. Woolf</a>, <a href="https://www.cs.bu.edu/fac/sclaroff/">S. Sclaroff</a>, <a href="http://www.cs.bu.edu/~betke/">M. Betke</a><br>
-            <em>IEEE International Conference on Automatic Face and Gesture Recognition (FG)</em>, 2021<br>
-            <em>IEEE Transactions on Biometrics, Identity and Behavior (T-BIOM)</em>, 2022<br>
-            <a href="https://ieeexplore.ieee.org/abstract/document/9906410">journal paper</a><br>
-            <font color="red"><strong>(Selected for Oral Presentation and Best Poster Award - 4% award rate)</strong></font><br>
-            <p style="text-align:justify">
-              In order to improve behavior prediction and behavior understanding of students using an Intelligent Tutoring System, we present a novel instance of affect transfer learning that leverages a large affect recognition dataset.
-            </p>
-          </td>
-        </tr>
+                <!-- Simulated Adversarial Testing -->
+                <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                    <tr>
+                        <td width="25%">
+                            <img src='figs/adv_test_sim.png' width="160" height="160">
+                        </td>
+                        <td width="75%" valign="top">
+                            <p>
+                                <a href="https://arxiv.org/abs/2106.04569">
+                                    <papertitle>Simulated Adversarial Testing of Face Recognition Models</papertitle>
+                                </a>
+                                <br>
+                                <strong>N. Ruiz</strong>, A. Kortylewski, W. Qiu, Cihang Xie, Sarah Adel Bargal, Alan Yuille, S. Sclaroff
+                                <br>
+                                <em>Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2022
+                            </p>
+                        </td>
+                    </tr>
+                </table>
 
-      <tr>
-          <td width="25%">
-            <div class="one">
-            <img src='figs/img_disrupt.png' height='92.4%' width="100%">
-            </div>
-          </td>
-          <td valign="top" width="75%">
-            <p><a href="https://arxiv.org/abs/2003.01279">
-              <papertitle>Disrupting DeepFakes: Adversarial Attacks Against Conditional Image Translation Networks and Facial Manipulation Systems</papertitle></a><br>
-              <strong>N. Ruiz</strong>, <a href="https://cs-people.bu.edu/sbargal/">S. Bargal</a>, <a href="https://www.cs.bu.edu/fac/sclaroff/">S. Sclaroff</a><br>
-              <em>CVPR Workshop on Adversarial Machine Learning in Computer Vision and ECCV Workshop on Advances in Image Manipulation</em>, 2020 <br>
-              <a href="https://twimlai.com/twiml-talk-375-disrupting-deepfakes-adversarial-attacks-against-conditional-image-translation-networks-with-nataniel-ruiz/">podcast</a> &nbsp/&nbsp <a href="https://github.com/natanielruiz/disrupting-deepfakes">code</a> &nbsp/&nbsp <a href="https://www.youtube.com/watch?v=7_7r4Ng4-bE&feature=youtu.be">video demo</a><br>
-              <p style="text-align:justify">
-                We present a method for disrupting the generation of deepfakes by generating adversarial attacks for image translation networks. We present the first instance of attacks against conditional image translation networks. Our attacks transfer across different conditioning classes. We also present the first instance of adversarial training for generative adversarial networks as a first step towards robust image translation networks.
-              </p>
-            </td>
-          </tr>
-          
-          <tr>
-              <td width="25%">
-                <div class="one">
-                <img src='figs/img_visual_target_video.png' height='75%' width="100%">
-                </div>
-              </td>
-              <td valign="top" width="75%">
-                <p><a href="https://arxiv.org/abs/2003.02501">
-                  <papertitle>Detecting Attended Visual Targets in Video</papertitle></a><br>
-                  <a href="https://www.cc.gatech.edu/~echong8/">E. Chong</a>, Y. Wang, <strong>N. Ruiz</strong>, <a href="http://rehg.org/">J.M. Rehg</a><br>
-                  <em>Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2020 <br>
-                  <a href="https://github.com/ejcgt/attention-target-detection">code</a><br>
-                  <p style="text-align:justify">
-                    We present the most advanced video attention detection method to-date. By leveraging our new large video dataset of gaze behavior and a new neural network architecture we achieve state-of-the-art performance on three gaze following datasets and compelling real-world performance.
-                  </p>
-                </td>
+                <!-- MorphGAN -->
+                <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                    <tr>
+                        <td width="25%">
+                            <img src='figs/morphgan.gif' width="160" height="160">
+                        </td>
+                        <td width="75%" valign="top">
+                            <p>
+                                <a href="https://arxiv.org/abs/2012.05225">
+                                    <papertitle>MorphGAN: One-Shot Face Synthesis GAN for Detecting Recognition Bias</papertitle>
+                                </a>
+                                <br>
+                                <strong>N. Ruiz</strong>, B. J. Theobald, A. Ranjan, A. H. Abdelaziz, N. Apostoloff
+                                <br>
+                                <em>British Machine Vision Conference (BMVC)</em>, 2021
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+
+                <!-- Protecting Against Image Translation Deepfakes -->
+                <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                    <tr>
+                        <td width="25%">
+                            <img src='figs/blackbox_deepfake.png' width="160" height="160">
+                        </td>
+                        <td width="75%" valign="top">
+                            <p>
+                                <a href="https://arxiv.org/abs/2006.06493">
+                                    <papertitle>Protecting Against Image Translation Deepfakes by Leaking Universal Perturbations from Black-Box Neural Networks</papertitle>
+                                </a>
+                                <br>
+                                <strong>N. Ruiz</strong>, S. Bargal, S. Sclaroff
+                                <br>
+                                <em>arxiv</em>, 2021
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+
+                <!-- Leveraging Affect Transfer Learning -->
+                <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                    <tr>
+                        <td width="25%">
+                            <img src='figs/img_leveraging.png' width="160" height="160">
+                        </td>
+                        <td width="75%" valign="top">
+                            <p>
+                                <a href="https://arxiv.org/abs/2002.05242">
+                                    <papertitle>Leveraging Affect Transfer Learning for Behavior Prediction in an Intelligent Tutoring System</papertitle>
+                                </a>
+                                <br>
+                                <strong>N. Ruiz</strong>, H. Yu, D. Allessio, M. Jalal, Thomas Murray, J. Magee, J. Whitehill, V. Ablavsky, I. Arroyo, B. Woolf, S. Sclaroff, M. Betke
+                                <br>
+                                <em>IEEE International Conference on Automatic Face and Gesture Recognition (FG)</em>, 2021
+                                <br>
+                                <em>IEEE Transactions on Biometrics, Identity and Behavior (T-BIOM)</em>, 2022
+                                <br>
+                                <a href="https://ieeexplore.ieee.org/abstract/document/9906410">journal paper</a>
+                                <br>
+                                <font color="red"><strong>(Selected for Oral Presentation and Best Poster Award - 4% award rate)</strong></font>
+                            </p>
+                        </td>
+                    </tr>
+                </table>
+
+                <!-- Disrupting DeepFakes -->
+                <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+                    <tr>
+                        <td width="25%">
+                            <img src='figs/img_disrupt.png' width="160" height="160">
+                        </td>
+                        <td width="75%" valign="top">
+                            <p>
+                                <a href="https://arxiv.org/abs/2003.01279">
+                                    <papertitle>Disrupting DeepFakes: Adversarial Attacks Against Conditional Image Translation Networks and Facial Manipulation Systems</papertitle>
+                                </a>
+                                <br>
+                                <strong>N. Ruiz</strong>, S. Bargal, S. Sclaroff
+                                <br>
+                                <em>CVPR Workshop on Adversarial Machine Learning in Computer Vision and ECCV Workshop on Advances in Image Manipulation</em>, 2020
+                                <br>
+                                <a href="https://twimlai.com/twiml-talk-375-disrupting-deepfakes-adversarial-attacks-against-conditional-image-translation-networks-with-nataniel-ruiz/">podcast</a> |
+                                <a href="https://github.com/natanielruiz/disrupting-deepfakes">code</a> |
+                                <a href="https://www.youtube.com/watch?v=7_7r4Ng4-bE&feature=youtu.be">video demo</a>
+                              </p>
+                            </td>
+                            </tr>
+                            </table>
+
+                            <!-- Detecting Attended Visual Targets in Video -->
+            <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+              <tr>
+                  <td width="25%">
+                      <img src='figs/img_visual_target_video.png' width="160" height="160">
+                  </td>
+                  <td width="75%" valign="top">
+                      <p>
+                          <a href="https://arxiv.org/abs/2003.02501">
+                              <papertitle>Detecting Attended Visual Targets in Video</papertitle>
+                          </a>
+                          <br>
+                          E. Chong, Y. Wang, <strong>N. Ruiz</strong>, J.M. Rehg
+                          <br>
+                          <em>Conference on Computer Vision and Pattern Recognition (CVPR)</em>, 2020
+                          <br>
+                          <a href="https://github.com/ejcgt/attention-target-detection">code</a>
+                      </p>
+                  </td>
               </tr>
+          </table>
 
-    <tr>
-      <td width="25%">
-        <div class="one">
-        <img src='figs/lts_sim.png'>
-        </div>
+          <!-- Learning To Simulate -->
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+              <tr>
+                  <td width="25%">
+                      <img src='figs/lts_sim.png' width="160" height="160">
+                  </td>
+                  <td width="75%" valign="top">
+                      <p>
+                          <a href="https://arxiv.org/abs/1810.02513">
+                              <papertitle>Learning To Simulate</papertitle>
+                          </a>
+                          <br>
+                          <strong>N. Ruiz</strong>, S. Schulter, M. Chandraker
+                          <br>
+                          <em>International Conference on Learning Representations (ICLR)</em>, 2019
+                          <br>
+                          <a href="docs/lts_poster.pdf">poster</a>
+                      </p>
+                  </td>
+              </tr>
+          </table>
+
+          <!-- Connecting Gaze, Scene, and Attention -->
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+              <tr>
+                  <td width="25%">
+                      <img src='figs/gaze.png' width="160" height="160">
+                  </td>
+                  <td width="75%" valign="top">
+                      <p>
+                          <a href="http://openaccess.thecvf.com/content_ECCV_2018/html/Eunji_Chong_Connecting_Gaze_Scene_ECCV_2018_paper.html">
+                              <papertitle>Connecting Gaze, Scene, and Attention: Generalized Attention Estimation via Joint Modeling of Gaze and Scene Saliency</papertitle>
+                          </a>
+                          <br>
+                          E. Chong, <strong>N. Ruiz</strong>, Y. Wang, Y. Zhang, A. Rozga, J.M. Rehg
+                          <br>
+                          <em>European Conference on Computer Vision (ECCV)</em>, 2018
+                          <br>
+                          <a href="docs/argos_poster.pdf">poster</a> |
+                          <a href="docs/Chong_2018_ECCV.bib">bibtex</a>
+                      </p>
+                  </td>
+              </tr>
+          </table>
+
+          <!-- Fine-Grained Head Pose Estimation Without Keypoints -->
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+              <tr>
+                  <td width="25%">
+                      <img src='figs/deep-head-pose.png' width="160" height="160">
+                  </td>
+                  <td width="75%" valign="top">
+                      <p>
+                          <a href="http://openaccess.thecvf.com/content_cvpr_2018_workshops/w41/html/Ruiz_Fine-Grained_Head_Pose_CVPR_2018_paper.html">
+                              <papertitle>Fine-Grained Head Pose Estimation Without Keypoints</papertitle>
+                          </a>
+                          <br>
+                          <strong>N. Ruiz</strong>, E. Chong, J.M. Rehg
+                          <br>
+                          <em>Conference on Computer Vision and Pattern Recognition Workshop (CVPRW)</em>, 2018
+                          <font color="red"><strong>(Oral Presentation)</strong></font>
+                          <br>
+                          <a href="https://github.com/natanielruiz/deep-head-pose">code</a> |
+                          <a href="https://youtu.be/Bz6eF4Nl1O8">video demo</a> |
+                          <a href="docs/hopenet_poster.pdf">poster</a> |
+                          <a href="docs/ruiz2017fine.bib">bibtex</a>
+                      </p>
+                  </td>
+              </tr>
+          </table>
+
+          <!-- Learning to Localize and Align Fine-Grained Actions -->
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+              <tr>
+                  <td width="25%">
+                      <img src='figs/localize-and-align.png' width="160" height="160">
+                  </td>
+                  <td width="75%" valign="top">
+                      <p>
+                          <a href="https://arxiv.org/abs/1809.08381">
+                              <papertitle>Learning to Localize and Align Fine-Grained Actions to Sparse Instructions</papertitle>
+                          </a>
+                          <br>
+                          M. Hahn, <strong>N. Ruiz</strong>, J.B. Alayrac, I. Laptev, J.M. Rehg
+                          <br>
+                          <em>arXiv</em>, 2018
+                      </p>
+                  </td>
+              </tr>
+          </table>
+
+          <!-- Detecting Gaze Towards Eyes in Natural Social Interactions -->
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+              <tr>
+                  <td width="25%">
+                      <img src='figs/eye-contact.png' width="160" height="160">
+                  </td>
+                  <td width="75%" valign="top">
+                      <p>
+                          <a href="https://dl.acm.org/citation.cfm?id=3131902">
+                              <papertitle>Detecting Gaze Towards Eyes in Natural Social Interactions and Its Use in Child Assessment</papertitle>
+                          </a>
+                          <br>
+                          E. Chong, K. Chanda, Z. Ye, A. Southerland, <strong>N. Ruiz</strong>, R.M. Jones, A. Rozga, J.M. Rehg
+                          <br>
+                          <em>UbiComp and Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)</em>, 2017
+                          <br>
+                          <font color="red"><strong>(Selected for Oral Presentation and Distinguished Paper Award - 3% award rate)</strong></font>
+                          <br>
+                          <a href="docs/chong2017imwut.bib">bibtex</a>
+                      </p>
+                  </td>
+              </tr>
+          </table>
+
+          <!-- Dockerface -->
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+              <tr>
+                  <td width="25%">
+                      <img src='figs/dockerface.jpg' width="160" height="160">
+                  </td>
+                  <td width="75%" valign="top">
+                      <p>
+                          <a href="https://arxiv.org/abs/1708.04370">
+                              <papertitle>Dockerface: an Easy to Install and Use Faster R-CNN Face Detector in a Docker Container</papertitle>
+                          </a>
+                          <br>
+                          <strong>N. Ruiz</strong>, J.M. Rehg
+                          <br>
+                          <em>arXiv</em>, 2017
+                          <br>
+                          <a href="https://github.com/natanielruiz/dockerface">code</a> |
+                          <a href="docs/ruiz2017dockerface.bib">bibtex</a>
+                      </p>
+                  </td>
+              </tr>
+          </table>
+
+          <!-- Projects -->
+          <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
+              <tr>
+                  <td>
+                      <heading>Projects</heading>
+                  </td>
+              </tr>
+          </table>
+
+          <!-- android-yolo -->
+          <table width="100%" align="center" border="0" cellpadding="20">
+              <tr>
+                  <td width="25%">
+                      <img src="figs/yolo.png" width="160" height="160">
+                  </td>
+                  <td width="75%" valign="top">
+                      <p>
+                          <a href="https://github.com/natanielruiz/android-yolo">
+                              <papertitle>android-yolo</papertitle>
+                          </a>
+                          <br>
+                          <strong>N. Ruiz</strong>
+                          <br>
+                          <a href="https://youtu.be/EhMrf4G5Wf0">video demo</a> |
+                          <a href="https://drive.google.com/open?id=0B2fFW2t9-qW3LWFDNXVHUE9rV3M">app apk</a>
+                          <br>
+                          Real-time object detection on Android using the YOLO network with TensorFlow.
+                      </p>
+                  </td>
+              </tr>
+          </table>
       </td>
-      <td valign="top" width="75%">
-        <p><a href="https://arxiv.org/abs/1810.02513">
-          <papertitle>Learning To Simulate</papertitle></a><br>
-          <strong>N. Ruiz</strong>, <a href="http://www.nec-labs.com/samuel-schulter">S. Schulter</a>, <a href="http://www.nec-labs.com/~manu/">M. Chandraker</a><br>
-          <em>International Conference on Learning Representations (ICLR)</em>, 2019 <br>
-          <a href="docs/lts_poster.pdf">poster</a><br>
-          <p style="text-align:justify">
-            We propose a framework to train a machine learning model by optimally sampling synthetic data. Our algorithm learns parameters of a simulation engine to generate training data for a machine learning model in order to maximize performance. We apply this algorithm to semantic segmentation for traffic scenes and evaluate on both on simulated and real data.
-          </p>
-        </td>
-      </tr>
-
-    <tr>
-      <td width="25%">
-        <div class="one">
-        <img src='figs/gaze.png'>
-        </div>
-      </td>
-      <td valign="top" width="75%">
-        <p><a href="http://openaccess.thecvf.com/content_ECCV_2018/html/Eunji_Chong_Connecting_Gaze_Scene_ECCV_2018_paper.html">
-          <papertitle>Connecting Gaze, Scene, and Attention: Generalized Attention Estimation via Joint Modeling of Gaze and Scene Saliency</papertitle></a><br>
-          <a href="https://www.cc.gatech.edu/~echong8/">E. Chong</a>, <strong>N. Ruiz</strong>, Y. Wang, <a href="https://sites.google.com/view/yunzhang/home">Y. Zhang</a>, <a href="http://www.agatarozga.org/">A. Rozga</a>, <a href="http://rehg.org/">J.M. Rehg</a><br>
-          <em>European Conference on Computer Vision (ECCV)</em>, 2018 <br>
-          <a href="docs/argos_poster.pdf">poster</a> &nbsp/&nbsp <a href="docs/Chong_2018_ECCV.bib">bibtex</a><br>
-          <p style="text-align:justify">
-            We are the first to tackle the generalized visual attention prediction problem, which consists in predicting the 3D gaze vector, attention heatmaps inside of the image frame and whether the subject is looking inside or outside of the image. To this end, we jointly model gaze and scene saliency using a neural network architecture trained on three heterogeneous datasets.
-          </p>
-        </td>
-      </tr>
-
-      <tr>
-        <td width="25%">
-          <div class="one">
-          <img src='figs/deep-head-pose.png'>
-          </div>
-        </td>
-        <td valign="top" width="75%">
-          <p><a href="http://openaccess.thecvf.com/content_cvpr_2018_workshops/w41/html/Ruiz_Fine-Grained_Head_Pose_CVPR_2018_paper.html">
-            <papertitle>Fine-Grained Head Pose Estimation Without Keypoints</papertitle></a><br>
-            <strong>N. Ruiz</strong>, <a href="https://www.cc.gatech.edu/~echong8/">E. Chong</a>, <a href="http://rehg.org/">J.M. Rehg</a><br>
-            <em>Conference on Computer Vision and Pattern Recognition Workshop (CVPRW)</em>, 2018 &nbsp <font color="red"><strong>(Oral Presentation)</strong></font><br>
-            <a href="https://github.com/natanielruiz/deep-head-pose">code</a> &nbsp/&nbsp <a href="https://youtu.be/Bz6eF4Nl1O8">video demo</a> &nbsp/&nbsp <a href="docs/hopenet_poster.pdf">poster</a> &nbsp/&nbsp <a href="docs/ruiz2017fine.bib">bibtex</a><br>
-            <p style="text-align:justify">
-              By using a deep network trained with a binned pose classification loss and a pose regression loss on a large dataset we obtain state-of-the-art head pose estimation results on several popular benchmarks. Our head pose estimation models generalize to different domains and work on low-resolution images. We release an open-source software package with pre-trained models that can be used directly on images and video.
-            </p>
-          </td>
-        </tr>
-
-      <tr>
-        <td width="25%">
-          <div class="one">
-          <img src='figs/localize-and-align.png'>
-          </div>
-        </td>
-        <td valign="top" width="75%">
-          <p><a href="https://arxiv.org/abs/1809.08381">
-            <papertitle>Learning to Localize and Align Fine­-Grained Actions to Sparse Instructions</papertitle></a><br>
-            <a href="http://www.meerahahn.net/">M. Hahn</a>, <strong>N. Ruiz</strong>, <a href="http://www.di.ens.fr/~alayrac/">J.B. Alayrac</a>, <a href="http://www.di.ens.fr/~laptev/">I. Laptev</a>, <a href="http://rehg.org/">J.M. Rehg</a><br>
-            <em>arXiv</em>, 2018 <br>
-            <p style="text-align:justify">
-              We present a framework that, given an instructional video, can localize atomic action segments and align them to the appropriate instructional step using object recognition and natural language.
-            </p>
-        </td>
-      </tr>
-
-      <tr>
-        <td width="25%">
-          <div class="one">
-          <img src='figs/eye-contact.png'>
-          </div>
-        </td>
-        <td valign="top" width="75%">
-          <p><a href="https://dl.acm.org/citation.cfm?id=3131902">
-            <papertitle>Detecting Gaze Towards Eyes in Natural Social Interactions and Its Use in Child Assessment</papertitle></a><br>
-            <a href="https://www.cc.gatech.edu/~echong8/">E. Chong</a>, <a href="https://www.linkedin.com/in/kathachanda/">K. Chanda</a>, <a href="https://scholar.google.com/citations?user=EKAynJgAAAAJ&hl=en">Z. Ye</a>, <a href="https://www.cc.gatech.edu/people/audrey-southerland">A. Southerland</a>, <strong>N. Ruiz</strong>, <a href="http://vivo.med.cornell.edu/display/cwid-rej2004">R.M. Jones</a>, <a href="http://www.agatarozga.org/">A. Rozga</a>, <a href="http://rehg.org/">J.M. Rehg</a><br>
-            <em>UbiComp and Proceedings of the ACM on Interactive, Mobile, Wearable and Ubiquitous Technologies (IMWUT)</em>, 2017<br> 
-            <font color="red"><strong>(Selected for Oral Presentation and Distinguished Paper Award - 3% award rate)</strong></font><br>
-            <a href="docs/chong2017imwut.bib">bibtex</a><br>
-            <p style="text-align:justify">
-              We introduce the Pose-Implicit CNN, a novel deep learning architecture that predicts eye contact while implicitly estimating the head pose. The model is trained on a dataset comprising 22 hours of 156 play session videos from over 100 children, half of whom are diagnosed with Autism Spectrum Disorder.
-            </p>
-        </td>
-      </tr>
-
-      <tr>
-      <td width="25%">
-        <div class="one">
-        <img src='figs/dockerface.jpg'>
-        </div>
-      </td>
-      <td valign="top" width="75%">
-        <p><a href="https://arxiv.org/abs/1708.04370">
-          <papertitle>Dockerface: an Easy to Install and Use Faster R-CNN Face Detector in a Docker Container</papertitle></a><br>
-          <strong>N. Ruiz</strong>, <a href="http://rehg.org/">J.M. Rehg</a><br>
-          <em>arXiv</em>, 2017 <br>
-          <a href="https://github.com/natanielruiz/dockerface">code</a> &nbsp/&nbsp <a href="docs/ruiz2017dockerface.bib">bibtex</a><br> 
-          <p style="text-align:justify">
-            In order to help the wider scientific community, we release a pre-trained deep learning face detector that is easy to download and use on images and video.
-          </p>
-        </td>
-      </tr>
-
-      </table>
-
-      <!-- PROJECTS -->
-
-      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-      <tr>
-        <td>
-        <heading>Projects</heading>
-        </td>
-      </tr>
-      </table>
-      <table width="100%" align="center" border="0" cellpadding="20">
-
-      <table width="100%" align="center" border="0" cellpadding="20">
-        <tr>
-          <td width="25%"><img src="figs/yolo.png" width="160" height="160"></td>
-          <td width="75%" valign="top">
-          <p>
-            <a href="https://github.com/natanielruiz/android-yolo">
-            <papertitle>android-yolo</papertitle>
-            </a>
-            <br>
-            <strong>N. Ruiz</strong>
-            <br>
-            <a href="https://youtu.be/EhMrf4G5Wf0">video demo</a> &nbsp/&nbsp <a href="https://drive.google.com/open?id=0B2fFW2t9-qW3LWFDNXVHUE9rV3M">app apk</a><br>
-          <p style="text-align:justify">
-            Real-time object detection on Android using the YOLO network with TensorFlow.
-          </p>
-          </p>
-          </td>
-        </tr>
-      </table>
-
-      <table width="100%" align="center" border="0" cellspacing="0" cellpadding="20">
-        <tr>
-          <td>
-          <br>
-          <p align="right">
-            <font size="1">
-            <a href="https://jonbarron.info/">template</a>
-        </font>
-          </p>
-          </td>
-        </tr>
-        </table>
-
-      <script type="text/javascript">
-      var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
-          document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
-
-      </script> <script type="text/javascript">
-      try {
-          var pageTracker = _gat._getTracker("UA-7580334-1");
-          pageTracker._trackPageview();
-          } catch(err) {}
-      </script>
-    </td>
-    </tr>
-  </table>
-  </body>
-</html>
+  </tr>
+</table>
