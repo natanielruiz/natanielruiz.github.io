@@ -61,17 +61,21 @@
     .hero {
       display: grid;
       grid-template-columns: 96px 1fr;
-      column-gap: 18px;
+      column-gap: 24px;
       align-items: start;
       width: 100%;
       margin: 0;
+      transform: translateX(8px);
     }
 
     .hero img {
       display: block;
+      justify-self: center;
       width: 84px;
       height: 84px;
       object-fit: cover;
+      border-radius: 10px;
+      transform: translateX(12px);
     }
 
     .title-row {
@@ -139,7 +143,7 @@
 
       .hero {
         grid-template-columns: 72px 1fr;
-        column-gap: 14px;
+        column-gap: 18px;
       }
 
       .hero img {
